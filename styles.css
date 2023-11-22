@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Foldit:wght@100&family=Montserrat:ital,wght@0,100;0,400;0,700;1,400&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: lightgray;
+}
+
+.footer .social_links {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 33%;
+}
+
+.footer .social_links a .social_links_img {
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+}
+
+.intro_section {
+  display: flex;
+  width: 100%;
+  height: 60dvh;
+  justify-content: space-evenly;
+}
+
+.intro_section_info {
+  padding: 10%;
+  text-align: center;
+  max-width: 60dvw;
+}
+
+
+.employment_education > h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.my_projects {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.project_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+}
+
+.project_info_img {
+  width: 40px;
+  height: 40px;
+  display: inline;
+}
+
+.project_title {
+  display: flex;
+}
+
+.employment_education {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.employment_education h1 {
+  text-align: center;
+}
+
+.employment,
+.education {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.employment img,
+.education img {
+  margin-bottom: 10px;
+  max-width: 15%;
+  height: auto;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+  .employment,
+  .education {
+    width: 80%;
+  }
+}
+
+.sticky_footer {
+  position: sticky;
+  top: 100%;
+}
