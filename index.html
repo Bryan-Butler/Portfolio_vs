@@ -1,105 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/webpageicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="/images/favicon/alt portfolio.png" type="image/x-icon">
+  <title>Bryan's Portfolio</title>
 </head>
-<body>
 
-    <!--header navigation/logo-->
-    <header>
-        <div class="logo_container">
-        </div>
-    </header>
 
-    <!--quick landing/introduction section to who i am with some personal attributes/strengths and brief employment history-->
-    <div class="intro_section">
+<!--header navigation/logo-->
+<!-- <header>
+    <nav class="navbar">
+        <ul>
+          <li><a href="#intro-section">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+</header> -->
+
+<!--quick landing/introduction section to who i am with some personal attributes/strengths and brief employment history-->
+    <div class="intro_section" id="intro-section">
         <div class="intro_section_info">
-            <h3> Who is Bryan?</h3>
-            <p> Welcome to my corner of the digital universe! I'm Bryan, an aspiring entry-level software developer with a love for turning lines of code into innovative solutions. I will soon be graduating from Coder Academy with a diploma of IT, I've embarked on a journey to bring my enthusiasm for technology to life.</p> 
-          </div>
+            <h3> Bryan Butler</h3>
+            <p> An aspiring software developer</p> 
+
+            <ul class="social_links">
+                <li><a href="https://www.linkedin.com/in/bryan-butler-571156285/" target="_blank"><img src="/images/socials/linkedin.png" alt="Linkedin"></a></li>
+                <li><a href="https://github.com/Bryan-Butler" target="_blank"><img src="/images/socials/github.png" alt="Github"></a></li>
+                <li><a href="https://leetcode.com/Pepperz/" target="_blank"><img src="/images/socials/leetcode.png" alt="Leetcode"></a></li>
+                <li><a href="mailto:butlerbryan00@gmail.com" target="_blank"><img src="/images/socials/email.png" alt="Email"></a></li>
+            </ul>
+            
+            <a href="/documents/Bryan Butler Resume.pdf" download class="resume-button">Download Resume</a>
+        </div>
     </div>
 
-
-    <!-- All employment and education entries -->
-    <div class="employment_education">
-
-      <h1>Education</h1>
-      <h1>Employment</h1>
-
-      <!-- Employments -->
-      <div class="employment">
-        <h2>Railway Hotel Allora</h2>
-        <img class="employment_img" src="/static/visuals/uploads/{{latest_post.filename}}" alt="">
-        <p>Bartender / Bar manager</p>
-        <p>2018-current</p>
-      </div>
-
-
-      
+<body>
+  <div class="employment_education">
+    <div class="education_container">
+      <h1 class="ed_title">Education</h1>
       <div class="education">
-        <h1>Coder Academy</h1>
-        <h2>May-23 - Graduating March 24</h2>
-        <p>Diploma of IT - A web development bootcamp</p>
+        <img class="education_img" src="/images/education-employment/coderacademy.png" alt="">
+        <div class="ed_wrapper">
+          <h2 class="ed_subtitle">Coder Academy</h2>
+          <p class="ed_description">Diploma of IT</p>
+        </div>
       </div>
-
-            <!-- Employments -->
-      <div class="employment">
-        <h1>Oil and Gas drilling</h1>
-        <h2>Ensign Energy</h2>
-        <img class="employment_img" src="/static/visuals/uploads/{{another_post.filename}}" alt="">
-        <p>Leasehand</p>
-        <p></p>
-      </div>
-
-      <!-- Educations -->
       <div class="education">
-        <h2> <img class="education_img" src="/images/Assumption_college.png" alt=""> University ABC</h2>
-        <p>Highschool</p>
+        <img class="education_img" src="/images/education-employment/Assumption_college.png" alt="">
+        <div class="ed_wrapper">
+            <h2 class="ed_subtitle">Assumption College</h2>
+            <p class="ed_description">Graduated with a GCE and a OP 10</p>
+        </div>
       </div>
     </div>
 
+    <div class="employment_container">
+      <h1 class="ed_title">Employment</h1>
+      <div class="employment">
+        <img class="employment_img" src="" alt="">
+        <div class="ed_wrapper">
+            <h2 class="ed_subtitle">Railway Hotel Allora</h2>
+            <p class="ed_description">Bartender and bar manager</p>
+        </div>
+      </div>
+      <div class="employment">
+        <img class="employment_img" src="" alt="">
+        <div class="ed_wrapper">
+            <h2 class="ed_subtitle">Ensign Energy</h2>
+            <p class="ed_description">Leasehand</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <!-- Projects section -->
     <div class="my_projects">
-        <div class="project_info">
-          <div class="project_title">
-            <h4>API</h4>
-          </div>
-          <img src="/assets/hard working.png" alt="" class="project_info_img">
-          <p>Becoming a web developer or thriving in the tech industry demands unwavering focus and dedication. It involves consistently seeking iterative improvements and finding incremental ways to enhance skills and knowledge. Success hinges on a strong work ethic and a continuous drive to excel.</p>
-        </div>
-      
-        <div class="project_info">
-          <div class="project_title">
-            <h4>Terminal App</h4>
-          </div>
-          <img src="/assets/adaptation.png" alt="" class="project_info_img">
-          <p>Web developers must be perpetual learners, constantly adapting to new code bases. Effectively navigating different projects is essential, requiring strong problem-solving skills and an aptitude for quickly grasping unfamiliar code structures. Adaptability and proficiency with version control systems contribute to their success in collaborating with diverse teams.</p>
-        </div>
-      
-        <div class="project_info">
-          <div class="project_title">          
-            <h4>Portfolio Website</h4>
-          </div>
-          <img src="/images/css.svg" alt="" class="project_info_img"> 
-          <p>Web developers recognize the vital role of effective communication and teamwork. They skillfully bring together diverse ideas and collaborate to achieve shared objectives. By fostering open communication and valuing each team member's input, they create an environment conducive to reaching the end goal efficiently.</p>
-        </div>
+        <a href="https://github.com/Bryan-Butler/T2A2_API" target="_blank" class="project_info">
+            <div class="project_title">
+                <h4>API</h4>
+            </div>
+            <p>
+                A Game Store API that aimed to serve as an interface for interacting with a game store's data and functionalities programmatically.</p>
+        </a>
+
+        <a href="https://github.com/Bryan-Butler/Bryan_t1a3" target="_blank" class="project_info">
+            <div class="project_title">
+                <h4>Terminal banking App</h4>
+            </div>
+            <p>A command line app replocating a banks functionalities with some rudamentry json validation to ensure the correct user's data is accessed and updated.</p>
+        </a>
+
+        <a href="https://github.com/Bryan-Butler/BryanT1A2" target="_blank" class="project_info">
+            <div class="project_title">          
+                <h4>First Website</h4>
+            </div>
+            <p> First website i created and launched on netlify.</p>
+        </a>
     </div>
 
-      
-    <!--bottom social links-->
-    <footer class="sticky_footer">
-        <div class="social_links">
-          <a href="https://github.com/Pepperz"><img src="/assets/github.png" alt="github logo" class="social_links_img"></a>
-          <a href="https://au.linkedin.com/"><img src="/assets/linkedin.png" alt="linkedin logo" class="social_links_img"></a>
-          <a href="https://discord.com/"><img src="/assets/discord.png" alt="discord logo" class="social_links_img"></a>
-        </div>
-    </footer>
+    <div class="technologies">
+        <h2>Technologies ive used</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>SQL</li>
+          <li>Python</li>
+          <li>JavaScript</li>
+          <li>Node.js</li>
+          <li>React</li>
+        </ul>
+      </div>
       
 </body>
+
 </html>
